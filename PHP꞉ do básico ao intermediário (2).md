@@ -1,10 +1,3 @@
----
-tags: [Didática]
-title: 'PHP: do básico ao intermediário'
-created: '2020-09-23T15:35:40.165Z'
-modified: '2020-09-28T18:25:57.085Z'
----
-
 # PHP: do básico ao intermediário
 
 ## Imprimindo HTML
