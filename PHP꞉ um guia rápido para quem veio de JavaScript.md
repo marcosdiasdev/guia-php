@@ -1,10 +1,3 @@
----
-tags: [Didática]
-title: 'PHP: um guia rápido para quem veio de JavaScript'
-created: '2019-09-12T14:12:46.874Z'
-modified: '2020-09-28T14:39:16.597Z'
----
-
 # PHP: um guia rápido para quem veio de JavaScript
 
 ## 1 Olá, mundo!
