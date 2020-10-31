@@ -1,5 +1,7 @@
 # PHP: um guia rápido para quem veio de JavaScript
 
+Este guia apresenta alguns dos principais conceitos e funcionamentos da linguagem PHP para quem já conhece um pouco de JavaScript. Uma segunda parte, com conteúdos mais aplicados, pode ser encontrada [aqui](php-basico-intermediario.md).
+
 ## 1 Olá, mundo!
 
 Após ter instalado os programas necessários e configurado o seu ambiente de desenvolvimento, crie um arquivo `index.php` e insira o seguinte conteúdo:
