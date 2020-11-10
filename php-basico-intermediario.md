@@ -43,6 +43,25 @@ E intercalar código HTML e código PHP:
 </body>
 ```
 
+Se preferir, você pode substituir as chaves por um recurso específico da linguagem PHP, que consiste em utilizar `:` na abertura da estrutura e o prefixo `end` acompanhado do nome da estrutura no fechamento:
+
+```php
+<body>
+  
+<?php
+  $exibir_titulo = true;
+  if($exibir_titulo):
+?>
+
+  <h1>Cadastro</h1>
+
+<?php
+  endif;
+?>
+
+</body>
+```
+
 ## Retornando JSON
 
 Caso deseje construir uma aplicação que retorne JSON, primeiramente, é importante definir o cabeçalho para que o cliente interprete seu conteúdo corretamente, por meio da função `header()`. Para que o conteúdo a ser impresso seja formatado em JSON, utilize a função `json_decode()`. O exemplo a seguir retornará um objeto JSON com dados de data e hora atuais:
