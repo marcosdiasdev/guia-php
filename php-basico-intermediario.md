@@ -43,6 +43,20 @@ E intercalar código HTML e código PHP:
 </body>
 ```
 
+## Retornando JSON
+
+Caso deseje construir uma aplicação que retorne JSON, primeiramente, é importante definir o cabeçalho para que o cliente interprete seu conteúdo corretamente, por meio da função `header()`. Para que o conteúdo a ser impresso seja formatado em JSON, utilize a função `json_decode()`. O exemplo a seguir retornará um objeto JSON com dados de data e hora atuais:
+
+```php
+<?php
+  header('Content-Type: application/json');
+
+  $agora = new DateTime('NOW');
+
+  echo json_encode($agora);
+?>
+```
+
 ## Incluindo arquivos e reaproveitando código
 
 As funções `include()` e `require()` podem ser utilizadas para realizar a inclusão de um arquivo PHP dentro de outro, o que nos possibilita separar nosso código e reaproveitá-lo em lugares diferentes de uma aplicação.
