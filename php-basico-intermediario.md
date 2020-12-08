@@ -238,7 +238,9 @@ O formulário deve usar enctype="multipart/form-data" para indicar que pode have
 
 ### Tratando a requisição
 ```php 
-SERVER["DOCUMENTROOT"].'/imagens/'; $caminhoTemporario = $FILES['imagem']['tmpname'];
+<?php
+$diretorioDeImagens = $_SERVER["DOCUMENT_ROOT"].'/imagens/'; 
+$caminhoTemporario = $FILES['imagem']['tmpname'];
 $caminhoDefinitivo = $diretorioDeImagens . basename($_FILES['imagem']['name']);
 
 if (move_uploaded_file($caminhoTemporario, $caminhoDefinitivo)) {
