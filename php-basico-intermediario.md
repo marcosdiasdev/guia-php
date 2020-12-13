@@ -240,7 +240,7 @@ O formulário deve usar enctype="multipart/form-data" para indicar que pode have
 ```php 
 <?php
 $diretorioDeImagens = $_SERVER["DOCUMENT_ROOT"].'/imagens/'; 
-$caminhoTemporario = $FILES['imagem']['tmpname'];
+$caminhoTemporario = $_FILES['imagem']['tmpname'];
 $caminhoDefinitivo = $diretorioDeImagens . basename($_FILES['imagem']['name']);
 
 if (move_uploaded_file($caminhoTemporario, $caminhoDefinitivo)) {
